@@ -11,6 +11,10 @@
 
     <artifactId>E_Main</artifactId>
 
+    <properties>
+        <maven.compiler.enablePreview>true</maven.compiler.enablePreview>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.paumard</groupId>
@@ -21,6 +25,18 @@
         <dependency>
             <groupId>org.paumard</groupId>
             <artifactId>A_Database</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.paumard</groupId>
+            <artifactId>B_Price-monitoring</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.paumard</groupId>
+            <artifactId>C_Graphical-user-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
