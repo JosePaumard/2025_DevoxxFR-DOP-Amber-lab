@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.paumard</groupId>
+        <artifactId>2025_DevoxxFR-DOP-Amber-lab</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>B_Refactoring-to-DOP</artifactId>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.enablePreview>true</maven.compiler.enablePreview>
+    </properties>
+
+    <modules>
+        <module>A_Database</module>
+        <module>B_Price-monitoring</module>
+        <module>C_Graphical-user-interface</module>
+        <module>D_Flight-business-process</module>
+        <module>E_Main</module>
+    </modules>
+</project>
