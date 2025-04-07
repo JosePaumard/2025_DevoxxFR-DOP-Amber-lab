@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public record SimpleFlight(SimpleFlightID id, City from, City to)
       implements Flight {
 
-    private static final Map<FlightID, Price> pricePerFlight =
+    private static final Map<SimpleFlightID, Price> pricePerFlight =
           new ConcurrentHashMap<>();
 
     public static Price price(SimpleFlightID id) {

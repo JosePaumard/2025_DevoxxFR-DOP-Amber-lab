@@ -1,6 +1,7 @@
 package org.paumard.flightmonitoring;
 
 import org.paumard.flightmonitoring.business.FlightMonitoring;
+import org.paumard.flightmonitoring.business.model.MultilegFlightID;
 import org.paumard.flightmonitoring.business.model.SimpleFlightID;
 import org.paumard.flightmonitoring.business.service.DBService;
 import org.paumard.flightmonitoring.business.service.FlightGUIService;
@@ -29,8 +30,8 @@ public class FlightMonitoringApp {
 
         var f1 = new SimpleFlightID("PaAt"); // Paris Atlanta
         var f2 = new SimpleFlightID("AmNY"); // Amsterdam New York
-        var f3 = new SimpleFlightID("LoMi"); // London Miami
-        var f4 = new SimpleFlightID("FrWa"); // Frankurt Washington
+        var f3 = new MultilegFlightID("LoPaMi"); // London Miami via Paris
+        var f4 = new MultilegFlightID("FrLoWa"); // Frankurt Washington via London
 
         flightMonitoring.followFlight(f1);
         flightMonitoring.followFlight(f2);
